@@ -1,0 +1,76 @@
+document.addEventListener('DOMContentLoaded', function() {
+    scroll_menu()
+    scroll()
+    count()
+})
+// onclick="window.open(this.href, '_blank'); return false;""
+
+
+
+// Agregar efecto de desplazamiento al menú al hacer scroll
+function scroll_menu() {
+    window.addEventListener('scroll', function() {
+        var menu = document.querySelector('.menu');
+        var header = document.querySelector('.header');
+        var headerBottom = header.offsetTop + header.offsetHeight;
+        
+        if (window.pageYOffset > headerBottom) {
+            menu.classList.add('scrolled');
+        } else {
+            menu.classList.remove('scrolled');
+        }
+    });
+}
+
+  
+// ... código JavaScript anterior ...
+
+// Agregar funcionalidad al botón de alternancia del menú
+const menuToggle = document.querySelector('.menu-toggle');
+const navbar = document.querySelector('.navbar');
+function toggle() {
+    menuToggle.addEventListener('click', function() {
+        navbar.classList.toggle('active');
+    });
+} 
+
+
+
+function scroll(){
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            return;
+          }
+          entry.target.classList.remove('in-view');
+        });
+      });
+      const allAnimatedElements = document.querySelectorAll('.animado');
+      allAnimatedElements.forEach((element) => observer.observe(element));
+}
+
+
+
+
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function animateSections() {
+    const sections = document.querySelectorAll('.qs-section');
+    sections.forEach(section => {
+        if (isElementInViewport(section)) {
+            section.classList.add('animate');
+        }
+    });
+}
+
+window.addEventListener('scroll', animateSections);
+window.addEventListener('load', animateSections);
