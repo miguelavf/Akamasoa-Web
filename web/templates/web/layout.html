@@ -1,0 +1,52 @@
+{% load static %}
+{% block script %}
+{% endblock %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Akamasoa</title>
+    </head>
+    <body>  
+        <header class="header">
+            <nav class="menu">
+                <div class="container">
+                    <a href="#" class="logo">
+                        <img src="{% static 'web/Img/logotipo-betania-blanco.png' %}" alt="Akamasoa" id="logo-original">
+                        <img src="{% static 'web/Img/logotipo-betania-2x.png' %}" alt="Akamasoa" class="logo-scrolled">
+                    </a>
+                    <div class="menu-toggle">
+                        <input type="checkbox" id="menu-toggle">
+                        <label for="menu-toggle" class="menu-icon">
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="navbar" id="menu">
+                        <ul id="menu-items">
+                            
+                            <li><a href="/">Inicio</a></li>
+                            <li><a href="/Qs">Quiénes somos</a></li>
+                            <li><a href="#">Noticias</a></li>
+                        </ul>
+                    </div>
+                                                            
+                </div>
+            </nav> 
+            <div class="header-content container">
+                <div class="header-txt">
+                    <h1>AKAMASOA</h1>
+                    <h1>{% block title %}{% endblock %}</h1>
+                    <p>Manos que construyen sueños,
+                        corazones que irradian amor y esperanza,
+                        juntos, forjando un camino hacia un mañana mejor.
+                    </p>
+                    <a class="bn39" href="https://docs.google.com/forms/d/e/1FAIpQLSdFzTJH9Gn4MR0-LSOIGumxl4EDmsEWmJHpdEp7Dj5VascBGg/viewform" onclick="window.open(this.href, '_blank'); return false;"><span class="bn39span">UNIRME</span></a>
+                </div>
+            </div>
+        </header>
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
