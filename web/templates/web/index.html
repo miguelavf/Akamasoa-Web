@@ -56,24 +56,65 @@
 {% endblock %}
 {% block title %}{% endblock %}
 {% block body %}
+<div class="HolaHI">
+        <div class="header-content2 container2">
+                <div class="header-txt">
+                    <h1>Tiempo para Akamasoa</h1>
+            </div>
+        </div>
+            <div id="countdown">
+                
+    <div id="time">
+        <div class="circle" style="--clr:#0098f4;">
+            <div class="dots day_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="dd"></circle>
+            </svg>
+            <div id="days">00<br><span>Días</span></div>
+        </div>
+        <div class="circle" style="--clr:#ff2972;;">
+            <div class="dots hr_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+            </svg>
+            <div id="hours">00</div>
+        </div>
+        <div class="circle" style="--clr:#fee800;;">
+            <div class="dots min_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+            </svg>
+            <div id="minutes">00</div>
+        </div>
+        <div class="circle" style="--clr:#04fc43;;">
+            <div class="dots sec_dot"></div>
+            <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+            </svg>
+            <div id="seconds">00</div>
+        </div>
+    </div>
+</div>
+</div>
 <link rel="stylesheet" href="{% static 'web/style.css' %}">
 <section class="programas container animado">
     <h2>Nuestros Programas</h2>
     <div class="programas-content">
         <div class="programa">
-            <img src="" alt="Programa de Educación">
             <h3>Programa de Educación</h3>
             <p>Brindamos apoyo escolar y talleres educativos para niños y jóvenes en situación de vulnerabilidad.</p>
             <a href="#" class="btn-secondary">Más información</a>
         </div>
         <div class="programa">
-            <img src="" alt="Programa de Empleo">
             <h3>Programa de Empleo</h3>
             <p>Ofrecemos capacitaciones y oportunidades laborales para adultos en situación de desempleo.</p>
             <a href="#" class="btn-secondary">Más información</a>
         </div>
         <div class="programa">
-            <img src="" alt="Programa de Salud">
             <h3>Programa de Salud</h3>
             <p>Promovemos la salud integral a través de campañas de prevención y atención médica.</p>
             <a href="#" class="btn-secondary">Más información</a>
@@ -173,40 +214,4 @@
         </div>
     </div>
 </footer>
-<div id="countdown">
-    <div id="time">
-        <div class="circle" style="--clr:#fff;">
-            <div class="dots day_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70" id="dd"></circle>
-            </svg>
-            <div id="days">00<br><span>Días</span></div>
-        </div>
-        <div class="circle" style="--clr:#ff2972;;">
-            <div class="dots hr_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70" id="hh"></circle>
-            </svg>
-            <div id="hours">00</div>
-        </div>
-        <div class="circle" style="--clr:#fee800;;">
-            <div class="dots min_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70" id="mm"></circle>
-            </svg>
-            <div id="minutes">00</div>
-        </div>
-        <div class="circle" style="--clr:#04fc43;;">
-            <div class="dots sec_dot"></div>
-            <svg>
-                <circle cx="70" cy="70" r="70"></circle>
-                <circle cx="70" cy="70" r="70" id="ss"></circle>
-            </svg>
-            <div id="seconds">00</div>
-        </div>
-    </div>
-</div>
 {% endblock %}

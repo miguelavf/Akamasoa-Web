@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     scroll_menu()
     scroll()
-    count()
+    scroll_qs()
 })
 // onclick="window.open(this.href, '_blank'); return false;""
 
@@ -36,6 +36,22 @@ function toggle() {
 
 
 
+function scroll_qs() {
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            } else {
+                entry.target.classList.remove('animate');
+            }
+        });
+    }, { threshold: 0.5 });
+
+    const allAnimatedElements = document.querySelectorAll('.qs-section');
+    allAnimatedElements.forEach((element) => observer.observe(element));
+}
+
+
 function scroll(){
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
@@ -49,28 +65,3 @@ function scroll(){
       const allAnimatedElements = document.querySelectorAll('.animado');
       allAnimatedElements.forEach((element) => observer.observe(element));
 }
-
-
-
-
-function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-function animateSections() {
-    const sections = document.querySelectorAll('.qs-section');
-    sections.forEach(section => {
-        if (isElementInViewport(section)) {
-            section.classList.add('animate');
-        }
-    });
-}
-
-window.addEventListener('scroll', animateSections);
-window.addEventListener('load', animateSections);
