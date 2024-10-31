@@ -2,11 +2,11 @@ const { useState, useEffect } = React;
 
 const ImageSlider = () => {
   const images = [
-    "img-grupos/20241.jpg",
-    "{% static 'web/img-grupos/20242.jpg' %}",
-    "{% static 'web/img-grupos/20243.jpg' %}",
-    "{% static 'web/img-grupos/20244.jpg' %}",
-    "{% static 'web/img-grupos/20245.jpg' %}",
+    "/static/web/img-grupos/20241.jpg",
+    "/static/web/img-grupos/20242.jpg",
+    "/static/web/img-grupos/20243.jpg",
+    "/static/web/img-grupos/20244.jpg",
+    "/static/web/img-grupos/20245.jpg",
 
   ];
 

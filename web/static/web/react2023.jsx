@@ -2,14 +2,14 @@ const { useState, useEffect } = React;
 
 const ImageSlider = () => {
   const images = [
-    "img-grupos/2023.jpg",
-    "img-grupos/20231.jpg",
-    "img-grupos/20232.jpg",
-    "img-grupos/20233.jpg",
-    "img-grupos/20234.jpg",
-    "img-grupos/20235.jpg",
-    "img-grupos/20236.jpg",
-    "img-grupos/20237.jpg",
+    "/static/web/img-grupos/2023.jpg",
+    "/static/web/img-grupos/20231.jpg",
+    "/static/web/img-grupos/20232.jpg",
+    "/static/web/img-grupos/20233.jpg",
+    "/static/web/img-grupos/20234.jpg",
+    "/static/web/img-grupos/20235.jpg",
+    "/static/web/img-grupos/20236.jpg",
+    "/static/web/img-grupos/20237.jpg",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
