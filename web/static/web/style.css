@@ -21,19 +21,31 @@ body {
     padding: 0 15px;
 }
 
+
+
 .header {
-    background-image: url("Img/Monica.jpeg");
+    background-image: url("Img/Monica_Monica_2024-04-02_16_31_03.png");
     background-position: center;
     background-size: cover ;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(1, 1, 1,1)
 }
-
+.efect-background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0,0.4)
+}
 .menu {
     display: flex;
     justify-content: space-between;
@@ -46,13 +58,11 @@ body {
     background-color: transparent;
     padding: 10px;
     transition: background-color 0.3s ease;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(82, 82, 82, 0.3);
 }
 
 .HolaHI{
-    
-    padding-top: 30px;
-    
+    padding-top: 30px;   
 }
 
 
@@ -72,9 +82,9 @@ body {
 
 
 .container {
-    max-width: 1500px;
+    max-width: 140rem;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,7 +118,9 @@ body {
 }
 
 .logo {
-    position: relative;
+    position:relative;
+    display: flex;
+
 }
 
 .logo img {
@@ -125,6 +137,9 @@ body {
     top: 0;
     left: 0;
 }
+
+
+
 
 .menu.scrolled .logo .logo-original {
     opacity: 0;
@@ -202,7 +217,7 @@ body {
 
 
 .bn39 {
-    background-image: linear-gradient(135deg, #008aff, #86d472);
+    background-image: linear-gradient(135deg, #0088ff85, #86d4726b);
     border-radius: 6px;
     box-sizing: border-box;
     color: #ffffff;
@@ -223,7 +238,7 @@ body {
   
   .bn39 .bn39span {
     align-items: center;
-    background: #0e0e10;
+    background: #000000c2;
     border-radius: 6px;
     display: flex;
     justify-content: center;
@@ -271,7 +286,7 @@ body {
 
 
 .logo img {
-    max-width: 50px;
+    max-width: 7rem;
 }
 
 .navbar ul {
@@ -317,7 +332,7 @@ body {
 }
 
 .header-content h1 {
-    font-size: 48px;
+    font-size: 3rem;
     margin-bottom: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -325,6 +340,11 @@ body {
 
 .header-content p {
     margin-bottom: 40px;
+}
+
+.header-content .header-txt .Main-logo{
+    max-width: 12rem;
+    border-bottom: 4rem;
 }
 
 .btn-primary {
@@ -350,6 +370,39 @@ body {
 .programas {
     padding: 80px 0;
 }
+
+.programas-container-animado{
+
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40rem;
+    width: 100%;
+    padding-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(1, 1, 1,0.1)
+}
+.effect-background2
+{
+    width: 120rem;
+    height: 30rem;
+    display: flex;
+}
+
+
+
+
+.programas-content .programa img{
+    height: 8rem;
+    margin-bottom:3rem ;
+    width: auto;
+}
+
+
+
 
 .programas h2 {
     text-align: center;
@@ -378,7 +431,7 @@ body {
 }
 
 .programa p {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
 }
 
 .btn-secondary {
@@ -396,7 +449,9 @@ body {
     background-color: #555;
 }
 
-/* Impacto */
+
+
+/* Impacto
 .impacto {
     background-color: #f5f5f5;
     padding: 80px 0;
@@ -423,16 +478,34 @@ body {
     color: #ffc107;
     margin-bottom: 10px;
 }
+/*
+
 
 /* Equipo */
-.equipo {
-    padding: 80px 0;
+.equipo-container-animado {
+    background-position: center;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    height: 60rem;
+    width: 100%;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #73ccff51
+}
+.container{
+    width: 100%;
+    height: 100%;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
 
 .equipo h2 {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 36px;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-right: 3rem;
 }
 
 .equipo-content {
@@ -446,14 +519,28 @@ body {
 }
 
 .miembro img {
-    max-width: 100%;
-    margin-bottom: 20px;
+    max-width: 50rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: rgba(1, 1, 1,0.2);
+}
+
+.miembro .img3{
+    width: 100%;
+}
+
+.miembro .img2{
+    width: 100%;
+
+    
 }
 
 .miembro h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }
+
+
 
 /* Testimonios */
 .testimonios {
@@ -465,11 +552,14 @@ body {
     text-align: center;
     margin-bottom: 40px;
     font-size: 36px;
+    margin-left: 2rem;
 }
 
 .testimonios-content {
     display: flex;
     justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .testimonio {
@@ -477,7 +567,7 @@ body {
     text-align: center;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.1);
 }
 
 .testimonio img {
@@ -737,4 +827,40 @@ div#countdown {
     background: var(--clr);
     border-radius: 50%;
     box-shadow: 0 0 20px var(--clr), 0 0 60px var(--clr);
+}
+
+
+
+
+
+
+.Contenedor-linea{
+    width: 100%;
+    height: 40rem;
+}
+
+.box {
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin: 12rem 20rem;
+  }
+.line {
+    left: 50%;
+    width: 0.2rem;
+    height: 30rem;
+    background-color: black;
+    margin: 0 auto ;
+    position: absolute;
+
+}
+
+.BolsasAkamasoa{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-left: 43%;
 }

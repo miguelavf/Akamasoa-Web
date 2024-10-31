@@ -1,61 +1,101 @@
-{% extends "web/layout.html" %}
 {% load static %}
-{% block script %}
-    <script src="{% static 'web/script.js' %}"></script>  
-{% endblock %}
-{% block body %}
-    <link rel="stylesheet" href="{% static 'web/Qs.css' %}">
-    <div class="qs-section">
-        <div class="qs-box">
-       <div class="qs-content">
-           <div class="qs-img-container">
-               <img src="{% static 'web/Img/logotipo-betania-2x.png' %}" alt="Betania" class="qs-img">
-           </div>
-           <div class="qs-text">
-               <p>El Colegio Betania es una institución educativa católica fundada en 1950.
-                   Se caracteriza por la importancia que otorga a la formación de valores humanos y cristianos
-                   en sus alumnos, de manera tal que estos puedan desarrollar armónicamente sus cualidades
-                   físicas, morales e intelectuales y orientarlas en función de su destino trascendente.
-               </p>
-           </div>
-       </div>
-               </div>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Akamasoa</title>
+    <link rel="stylesheet" href="{% static 'web/Qs.css' %}>
 
-   </div>
-   <div class="qs-section">
-        <div class="qs-box">
-       <div class="qs-content">
-           <div class="qs-img-container">
-               <img src="{% static 'web/Img/Akamasoargentina.jpg' %}" alt="Akamasoa" class="qs-img">
-           </div>
-           <div class="qs-text">
-               <p>Akamasoa Argentina es una ONG creada a imagen de la fundación Akamasoa ubicada en Madagascar.
-                   Su misión es Erradicar la extrema pobreza a través de la nutrición, la estimulación, 
-                   la educación, el trabajo y la disciplina, mediante la construcción de oasis de esperanza,
-                   abordando todas las etapas de la vida de cada ser humano que la padece y convocándolo a
-                   hacer juntos Akamasoa Argentina.
-               </p>
-           </div>
-       </div>
-               </div>
-
-   </div>
-   <div class="qs-section">
-      <div class="qs-box">
-       <div class="qs-content">
-           <div class="qs-img-container">
-               <img src="{% static 'web/Img/logotipo-betania-2x.png' %}" alt="Betania" class="qs-img-comb">
-           </div>
-           <div class="qs-text">
-               <p>Ambas instituciones se han unido en una colaboración que busca apoyar en la erradicación de 
-                   la pobreza mientras que progresa en la formación integral de los alumnos a traves de la
-                   experiencia de ayudar a los que lo necesitan
-               </p>
-           </div>
-           <div class="qs-img-container">
-                <img src="{% static 'web/Img/Akamasoargentina.jpg' %}" alt="Akamasoa" class="qs-img-comb">
+</head>
+<body>  
+    <header class="header">
+        <div class="efect-background">
+        <nav class="menu">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="{% static 'web/Img/logotipo-betania-blanco.png' %}" alt="Akamasoa" id="logo-original">
+                    <img src="{% static 'web/Img/logotipo-betania-2x.png' %}" alt="Akamasoa" class="logo-scrolled">
+                </a>
+                <div class="menu-toggle">
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">
+                        <span></span>
+                    </label>
+                </div>
+                <div class="navbar" id="menu">
+                    <ul id="menu-items">
+                        
+                        <li><a href="/index.html">Inicio</a></li>
+                        <li><a href="/Qs.html">Quiénes somos</a></li>
+                    </ul>
+                </div>
+                                                        
             </div>
-       </div>
-   </div>
-  </div>
-{% endblock %}
+        </nav> 
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>AKAMASOA</h1>
+                <p>Manos que construyen sueños,
+                    corazones que irradian amor y esperanza,
+                    juntos, forjando un camino hacia un mañana mejor.
+                </p>
+                <a class="bn39" href="https://docs.google.com/forms/d/e/1FAIpQLSdFzTJH9Gn4MR0-LSOIGumxl4EDmsEWmJHpdEp7Dj5VascBGg/viewform" onclick="window.open(this.href, '_blank'); return false;"><span class="bn39span">UNIRME</span></a>
+            </div>
+        </div>
+    </div>
+    </header>
+<script src="{% static 'web/script.js' %}"></script>  
+
+
+
+<div class="qs-section">
+     <div class="qs-box">
+    <div class="qs-content">
+        <div class="qs-img-container">
+            <img src="{% static 'web/Img/logotipo-betania-2x.png' %}" alt="Betania" class="qs-img">
+        </div>
+        <div class="qs-text">
+            <p>El Colegio Betania es una institución educativa católica fundada en 1950.
+                Se caracteriza por la importancia que otorga a la formación de valores humanos y cristianos
+                en sus alumnos, de manera tal que estos puedan desarrollar armónicamente sus cualidades
+                físicas, morales e intelectuales y orientarlas en función de su destino trascendente.
+            </p>
+        </div>
+    </div>
+            </div>
+
+</div>
+<div class="qs-section">
+     <div class="qs-box">
+    <div class="qs-content">
+        <div class="qs-img-container">
+            <img src="{% static 'web/Img/Akamasoargentina.jpg' %}" alt="Akamasoa" class="qs-img">
+        </div>
+        <div class="qs-text">
+            <p>Akamasoa Argentina es una ONG creada a imagen de la fundación Akamasoa ubicada en Madagascar.
+                Su misión es Erradicar la extrema pobreza a través de la nutrición, la estimulación, 
+                la educación, el trabajo y la disciplina, mediante la construcción de oasis de esperanza,
+                abordando todas las etapas de la vida de cada ser humano que la padece y convocándolo a
+                hacer juntos Akamasoa Argentina.
+            </p>
+        </div>
+    </div>
+            </div>
+
+</div>
+<div class="qs-section">
+     <div class="qs-box">
+    <div class="qs-content">
+        <div class="qs-img-container">
+            <img src="{% static 'web/Img/logotipo-betania-2x.png' %}" alt="Betania" class="qs-img-comb">
+            <img src="{% static 'web/Img/Akamasoargentina.jpg' %}" alt="Akamasoa" class="qs-img-comb">
+        </div>
+        <div class="qs-text">
+            <p>Ambas instituciones se han unido en una colaboración que busca apoyar en la erradicación de 
+                la pobreza mientras que progresa en la formación integral de los alumnos a traves de la
+                experiencia de ayudar a los que lo necesitan
+            </p>
+        </div>
+    </div>
+</div>
+        </div>

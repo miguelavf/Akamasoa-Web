@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     scroll_menu()
     scroll()
-    scroll_qs()
+    count()
 })
 // onclick="window.open(this.href, '_blank'); return false;""
 
@@ -36,7 +36,7 @@ function toggle() {
 
 
 
-function scroll_qs() {
+function scroll() {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -52,16 +52,4 @@ function scroll_qs() {
 }
 
 
-function scroll(){
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('in-view');
-            return;
-          }
-          entry.target.classList.remove('in-view');
-        });
-      });
-      const allAnimatedElements = document.querySelectorAll('.animado');
-      allAnimatedElements.forEach((element) => observer.observe(element));
-}
+

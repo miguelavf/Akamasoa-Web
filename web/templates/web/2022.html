@@ -1,0 +1,79 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Names Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+            font-size: large;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h1 style="font-size: xx-large;">2022</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Nombres</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Albano, ValentÍn</td></tr>
+        <tr><td>Andreoni, Tomas Maximiliano</td></tr>
+        <tr><td>Argañaraz Villalba, Ezequiel Naim</td></tr>
+        <tr><td>Arilla, Victoria Camila</td></tr>
+        <tr><td>Barrios, ValentÍn</td></tr>
+        <tr><td>Ben, Nicolas Fernando</td></tr>
+        <tr><td>Caputo, Florencia Nahir</td></tr>
+        <tr><td>Castellano Canatta, Ignacio</td></tr>
+        <tr><td>Cruz, Pamela Silvina</td></tr>
+        <tr><td>Cruz, RocÍo Antonella</td></tr>
+        <tr><td>Gimenez Ortiz, Eber Javier</td></tr>
+        <tr><td>Granja Camperi, MarÍa Victoria</td></tr>
+        <tr><td>Guzman Cejas, Lautaro Nahuel</td></tr>
+        <tr><td>Lopez, Facundo Ezequiel</td></tr>
+        <tr><td>Mansilla, Milagros Belen</td></tr>
+        <tr><td>Martinez, Luciano José</td></tr>
+        <tr><td>Navarro, Victoria Paula</td></tr>
+        <tr><td>Perry, Santiago Nehuén</td></tr>
+        <tr><td>Reyes Gil, Patrick Xavier</td></tr>
+        <tr><td>Rufino, Nicolas Alejandro</td></tr>
+        <tr><td>Salto, Fabrizio Ariel</td></tr>
+        <tr><td>Salva, Lourdes Rocio</td></tr>
+        <tr><td>Scala, Tiziano</td></tr>
+        <tr><td>Soldo, Franco Nicolás</td></tr>
+        <tr><td>Tojo, Micaela Aida</td></tr>
+        <tr><td>Tonina, Serena</td></tr>
+        <tr><td>Vamosi Luna, Melina Tais</td></tr>
+        <tr><td>Veron, Luciana Agostina</td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+
+  
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.js"></script>
+    <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+</head>
+    <div id="slider-root"></div>
+    <script type="text/babel" src="{% static 'web/react2022.jsx' %}"></script>
+    <script type="text/babel">
+        const root = ReactDOM.createRoot(document.getElementById('slider-root'));
+        root.render(<ImageSlider />);
+    </script>

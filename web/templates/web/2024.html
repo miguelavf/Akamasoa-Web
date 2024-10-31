@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Names Table</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+            font-size: large;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<h1 style="font-size: xx-large;">2024</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Nombres</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Azzali, María Eugenia</td></tr>
+        <tr><td>Ben, Macarena Lucía</td></tr>
+        <tr><td>Blanco, Carmela Rosana</td></tr>
+        <tr><td>Campos Cazon, Candela Belen</td></tr>
+        <tr><td>Cañete, Florencia Evelyn</td></tr>
+        <tr><td>Corbalan, Agostina Johana</td></tr>
+        <tr><td>Della Torre, Micaela Victoria</td></tr>
+        <tr><td>Descheres Matulis, Valentin</td></tr>
+        <tr><td>Diaz Cedeño, Ashly Gabriela</td></tr>
+        <tr><td>Grecco, Ornella</td></tr>
+        <tr><td>Jerez, María Guadalupe</td></tr>
+        <tr><td>Liendro Torres, Luca Gastón</td></tr>
+        <tr><td>Llanos Moya, Marcelo Alejandro</td></tr>
+        <tr><td>Manosalva, Sarah Irina</td></tr>
+        <tr><td>Martinez Garcia, Delfina Sol</td></tr>
+        <tr><td>Mazzuli D angelo, Lucía</td></tr>
+        <tr><td>Molina, Kiara Belén</td></tr>
+        <tr><td>Morucci, Sol Victoria</td></tr>
+        <tr><td>Nakasone, Tomás Agustin</td></tr>
+        <tr><td>Piscolichi Peralta, Thiago Agustin</td></tr>
+        <tr><td>Ramírez Surichaqui, Camila Alexia</td></tr>
+        <tr><td>Rufino, Federico German</td></tr>
+        <tr><td>Sánchez Glasman, Ignacio Ezequiel</td></tr>
+        <tr><td>Sidoni Gonzalez, Delfina</td></tr>
+        <tr><td>Torres Amodio, Lorenzo Nahuel</td></tr>
+        <tr><td>Vallaro, Joaquín Nahuel</td></tr>
+        <tr><td>Vegas Ferré, Miguel Arturo</td></tr>
+        <tr><td>Viñas Iñiges, Lara Paulina</td></tr>
+    </tbody>
+</table>
+
+</body>
+</html>
+
+ <script src="https://cdn.tailwindcss.com"></script>
+ <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.development.js"></script>
+ <script crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.development.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.5/babel.min.js"></script>
+</head>
+ <div id="slider-root"></div>
+ <script type="text/babel" src="{% static 'web/react2024.jsx' %}"></script>
+ <script type="text/babel">
+     const root = ReactDOM.createRoot(document.getElementById('slider-root'));
+     root.render(<ImageSlider />);
+ </script>
