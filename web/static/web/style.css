@@ -813,8 +813,21 @@ div#countdown {
     padding-left: 30%;
     display: flex;
     gap: 30px;
-    Padding-left: 25%;
+    Padding-left: 30%;
 }
+
+@media (max-width: 768px) {
+    #time{
+        padding-bottom: 2rem;
+        padding-top: 2%;
+        padding-left: 40%;
+        align-items: center;
+        align-content: center;
+        display: grid;
+        gap: 30px;
+    }
+}
+
 #time .circle {
     position: relative;
     width: 150px;
